@@ -22,7 +22,7 @@ def anchor_identity(user_id: int, xml_hash_hex: str):
         return None
 
     # 3. Path to the SPECIFIC root web3 venv
-    web3_python = r"C:\Users\Administrator\Desktop\kyc_aml\web3_venv\Scripts\python.exe"
+    web3_python = r"C:\Users\mrinm\Downloads\phase_1\digivault\web3_venv\Scripts\python.exe"
 
     # 4. The Subprocess Script
     script = f"""

@@ -6,6 +6,7 @@ import {
   Inbox, GitCompare, Radio,
   Globe, BookOpen,
   Upload, FileText, Camera, Shield,
+  Network, Cpu, Sliders,
 } from "lucide-react";
 
 // ── KYC Stepper ──────────────────────────────────────────────────────────────
@@ -36,9 +37,10 @@ export const PORTALS = [
     icon: Building2,
     color: "sky",
     sections: [
-      { id: "queue",   label: "Review Queue", icon: Inbox      },
-      { id: "detail",  label: "Detail View",  icon: GitCompare },
-      { id: "alerts",  label: "Alert Hub",    icon: Radio      },
+      { id: "queue",         label: "Review Queue",    icon: Inbox      },
+      { id: "detail",        label: "Detail View",     icon: GitCompare },
+      { id: "alerts",        label: "Alert Hub",       icon: Radio      },
+      { id: "investigation", label: "Investigation",   icon: Network    },
     ],
   },
   {
@@ -49,6 +51,7 @@ export const PORTALS = [
     sections: [
       { id: "network",      label: "Network Overview", icon: Globe    },
       { id: "institutions", label: "Institution Mgmt", icon: BookOpen },
+      { id: "ml-pipeline",  label: "ML Pipeline",      icon: Cpu      },
     ],
   },
 ];

@@ -11,10 +11,12 @@ import AMLSimulator         from "./portals/user/AMLSimulator";
 import ReviewQueue          from "./portals/bank/ReviewQueue";
 import DetailView           from "./portals/bank/DetailView";
 import AlertHub             from "./portals/bank/AlertHub";
+import InvestigationGraph   from "./portals/bank/InvestigationGraph";
 
 // RBI Portal
 import NetworkOverview      from "./portals/rbi/NetworkOverview";
 import InstitutionManagement from "./portals/rbi/InstitutionManagement";
+import MLPipelineEngine     from "./portals/rbi/MLPipelineEngine";
 
 /** Maps [portalId][sectionId] → component */
 const ROUTES = {
@@ -24,13 +26,15 @@ const ROUTES = {
     aml:       <AMLSimulator />,
   },
   bank: {
-    queue:   <ReviewQueue />,
-    detail:  <DetailView />,
-    alerts:  <AlertHub />,
+    queue:         <ReviewQueue />,
+    detail:        <DetailView />,
+    alerts:        <AlertHub />,
+    investigation: <InvestigationGraph />,
   },
   rbi: {
     network:      <NetworkOverview />,
     institutions: <InstitutionManagement />,
+    "ml-pipeline": <MLPipelineEngine />,
   },
 };
 

@@ -17,3 +17,4 @@ class TokenResponse(BaseModel):
     user_id:      int
     role:         str
     full_name:    str
+    kyc_status:   str | None = None  # Added this line to prevent 500 errors!

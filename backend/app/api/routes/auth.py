@@ -49,6 +49,7 @@ def signup(payload: SignupRequest, db: Session = Depends(get_db)):
         user_id=user.id,
         role=user.role,
         full_name=user.full_name,
+        kyc_status=user.kyc_status  # Added kyc_status here
     )
 
 
@@ -78,4 +79,5 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)):
         user_id=user.id,
         role=user.role,
         full_name=user.full_name,
+        kyc_status=user.kyc_status  # Added kyc_status here
     )
